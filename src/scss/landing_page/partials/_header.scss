@@ -1,0 +1,36 @@
+header {
+  height: 6em;
+  background-color: #ffffff;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-size: 3em;
+      //font-family: 'Ubuntu', sans-serif;
+      font-family: 'Pacifico', cursive;
+    }
+
+    ul {
+      display: flex;
+      width: 30em;
+      height: 5em;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        a {
+          text-decoration: none;
+          color: black;
+          font-family: 'Ubuntu', sans-serif;
+
+          &:hover {
+            color: green;
+          }
+        }
+      }
+    }
+  }
+}

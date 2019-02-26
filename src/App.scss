@@ -1,29 +1,16 @@
+@import "scss/general/reset";
+@import "scss/general/fonts";
 
-.App {
-  text-align: center;
-}
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-.App-header {
-  background-color: red;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-.App-link {
+/*      ***************     LANDING PAGE        ***************     */
+@import "scss/landing_page/partials/base";
+@import "scss/landing_page/partials/header";
+@import "scss/landing_page/partials/pictureCarousel";
+@import "scss/landing_page/partials/aboutApp";
+@import "scss/landing_page/partials/aboutAuthor";
+@import "scss/landing_page/partials/footer";
+@import "scss/landing_page/partials/contact";
 
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+/*      ***************     APPLICATION PAGE        ***************     */
+
+@import "scss/application_page/partials/appHeader";

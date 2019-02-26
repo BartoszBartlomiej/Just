@@ -1,0 +1,45 @@
+section.aboutAuthor {
+  height: 30em;
+  background-color: #ffffff;
+  display: flex;
+  //align-items: center;
+
+  //.content {
+  //  display: flex;
+  //  justify-content: space-between;
+  //  //align-items: center;
+  //}
+
+  .aboutAuthor__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0 0 0;
+  }
+
+  h3 {
+    padding: 1em 0 0 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+  }
+
+  .aboutAuthor__img {
+    width: 10em;
+  }
+
+  .aboutAuthor__description {
+    padding-right: 20em;
+    width: 80em;
+
+
+    h3 {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+
+    p {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.2em;
+    }
+  }
+}

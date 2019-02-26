@@ -1,0 +1,38 @@
+section.carousel {
+  background-color: #EAEAEA;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 41em;
+  display: flex;
+  align-items: center;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .carousel__opacity__text {
+      background-color: rgba(200, 200, 200, 0.3);
+      padding: 1rem;
+    }
+
+    h2 {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 4em;
+      text-align: center;
+      //font-size: 3.5rem;
+      //padding: 0 0 .5rem 0;
+    }
+
+    p {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 2em;
+      text-align: center;
+      //font-size: 1.5rem;
+      //width: 35rem;
+      //text-align: center;
+    }
+  }
+}
