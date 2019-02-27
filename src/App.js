@@ -10,21 +10,21 @@ import {
 
 /*      ***************     LANDING PAGE        ***************     */
 import LandingPage from './components/LandingPage/LandingPage';
-// import Header from './components/LandingPage/Header/Header.jsx';
-// import PictureCarousel from './components/LandingPage/PictureCarousel/PictureCarousel';
-// import AboutApp from './components/LandingPage/AboutApp/AboutApp';
-// import AboutAuthor from './components/LandingPage/AboutAuthor/AboutAuthor';
-// import Footer from './components/LandingPage/Footer/Footer';
-// import Contact from './components/LandingPage/Contact/Contact';
 
 
 /*      ***************     APPLICATION PAGE        ***************     */
-
 import ApplicationPage from './components/ApplicationPage/ApplicationPage';
-// import AppHeader from './components/ApplicationPage/AppHeader/AppHeader';
 
 
+/*      ***************     NOT FOUND        ***************     */
+import NotFound from "./components/NotFound/NotFound";
+
+
+/*      ***************     STYLE        ***************     */
 import './App.scss';
+
+
+/*      ***************     FONT AWESOME        ***************     */
 
 import {library} from '@fortawesome/fontawesome-svg-core'
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -34,6 +34,7 @@ import {faHiking} from "@fortawesome/free-solid-svg-icons/faHiking";
 import {faBook} from "@fortawesome/free-solid-svg-icons/faBook";
 import {faCheck} from "@fortawesome/free-solid-svg-icons/faCheck";
 import {faTimes} from "@fortawesome/free-solid-svg-icons/faTimes";
+
 
 library.add(faIgloo);
 library.add(faCompass);
@@ -58,6 +59,7 @@ class App extends Component {
                         <Route path='/about__app' component={LandingPage}/>
                         <Route path='/about__author' component={LandingPage}/>
                         <Route path='/app' component={ApplicationPage}/>
+                        <Route path='*' component={NotFound}/>
                     </div>
                 </HashRouter>
             </div>

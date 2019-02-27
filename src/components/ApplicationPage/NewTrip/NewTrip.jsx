@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import AppHeader from '../AppHeader/AppHeader';
 import Navigation from "../../ApplicationPage/Navigation/Navigation";
-import ChooseCountry from './ChooseCountry';
+import ChooseCountry from './ChooseCountry/ChooseCountry';
 import Desktop from '../Desktop/Desktop';
 import TripPlan from './TripPlan/TripPlan'
 import Backpack from './Backpack/Backpack';

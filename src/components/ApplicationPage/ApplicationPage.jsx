@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import AppHeader from './AppHeader/AppHeader';
-import Navigation from './Navigation/Navigation';
+
 import NewTrip from './NewTrip/NewTrip'
 import FirstView from './FirstView/FirstView';
+import YourTrip from './YourTrip/YourTrip';
+
 import {
     HashRouter,
     Route,
@@ -21,9 +22,8 @@ export default class ApplicationPage extends Component {
                     <div>
                         <Route exact path='/app' component={FirstView}/>
                         <Route path='/app/newTrip' component={NewTrip}/>
-                        {/*<AppHeader />*/}
-                        {/*<AppSpace />*/}
-                        {/*<Navigation />*/}
+                        <Route path='/app/yourTrip' component={YourTrip}/>
+
                     </div>
                 </HashRouter>
             </div>
