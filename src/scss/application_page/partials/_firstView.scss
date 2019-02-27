@@ -1,0 +1,83 @@
+.viewSpace {
+  width: auto;
+  height: 38em;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("http://educypedia.karadimov.info/library/BlankMap-World.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .newTrip {
+    width: 50em;
+    height: 10em;
+    //border: 1px solid black;
+    margin-bottom: 3em;
+    background-image: url("https://images.pexels.com/photos/297642/pexels-photo-297642.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      color: green;
+    }
+
+    .newTrip__text {
+      background-color: rgba(200, 200, 200, 0.3);
+      width: 25em;
+      height: 5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.7em;
+      }
+    }
+  }
+
+  .yourTrip {
+    width: 50em;
+    height: 10em;
+    //border: 1px solid black;
+    margin-bottom: 3em;
+    background-image: url("https://images.pexels.com/photos/1443657/pexels-photo-1443657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      color: green;
+    }
+
+    .yourTrip__text {
+      background-color: rgba(200, 200, 200, 0.3);
+      width: 25em;
+      height: 5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.7em;
+      }
+    }
+  }
+}

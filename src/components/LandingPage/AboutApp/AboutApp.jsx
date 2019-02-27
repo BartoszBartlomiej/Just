@@ -9,7 +9,7 @@ export default class AboutApp extends Component {
     render() {
         return (
             <section className='aboutApp'>
-                <a id="about__app"/>
+                <div id="about__app"/>
                 <div className='content'>
                     <div className='aboutApp__description'>
                         <h3>O APLIKACJI</h3>

@@ -1,0 +1,28 @@
+.appNavigation {
+
+
+  nav {
+    width: 11.5em;
+    height: 38em;
+    background-color: #cccccc;
+
+    li {
+
+      padding: 1em 0 0 0.3em;
+
+      a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1.2em;
+
+        &:hover {
+          color: green;
+        }
+      }
+
+    }
+
+  }
+
+
+}

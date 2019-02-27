@@ -54,7 +54,7 @@ export default class PictureCarousel extends Component {
             backgroundImage: slider.url,
         };
         return (
-            <section style={myStyle} className='carousel'>
+            <section id='slider' style={myStyle} className='carousel'>
                 <div className='content'>
                     <div className='carousel__opacity__text'>
                         <h2>{slider.textHeader}</h2>

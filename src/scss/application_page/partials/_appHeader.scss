@@ -1,19 +1,34 @@
 header {
+  height: 6em;
+
+  .header {
+    //width: auto;
+    //height: 45em;
+    //border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 
-  .app__space {
-    width: auto;
-    height: 45em;
-    border: 1px solid black;
+    h1 {
+      font-size: 3em;
+      font-family: 'Pacifico', cursive;
+      width: 5em;
+
+      &:hover {
+        color: green;
+      }
+    }
+
+    p {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.5em;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000000;
+    }
   }
-
-  h1 {
-    font-size: 3em;
-    //font-family: 'Ubuntu', sans-serif;
-    font-family: 'Pacifico', cursive;
-  }
-
 
 }
-
-
