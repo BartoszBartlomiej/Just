@@ -20,14 +20,17 @@ export default class Navigation extends Component {
                 <nav>
                     <ul>
                         <li>
-                            <NavLink to='/app/tripPlan' activeStyle={linkStyle}><FontAwesomeIcon icon='list-ul'/> PLAN
+                            <NavLink exact to='/app/newTrip' activeStyle={linkStyle}><FontAwesomeIcon icon='globe-americas'/> STRONA GŁÓWNA</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/app/newTrip/tripPlan' activeStyle={linkStyle}><FontAwesomeIcon icon='list-ul'/> PLAN
                                 PODRÓŻY</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/app/backpack' activeStyle={linkStyle}><FontAwesomeIcon icon='hiking'/> PLECAK</NavLink>
+                            <NavLink to='/app/newTrip/backpack' activeStyle={linkStyle}><FontAwesomeIcon icon='hiking'/> PLECAK</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/app/diary' activeStyle={linkStyle}><FontAwesomeIcon icon='book'/> DZIENNIK
+                            <NavLink to='/app/newTrip/diary' activeStyle={linkStyle}><FontAwesomeIcon icon='book'/> DZIENNIK
                                 POKŁADOWY</NavLink>
                         </li>
                     </ul>

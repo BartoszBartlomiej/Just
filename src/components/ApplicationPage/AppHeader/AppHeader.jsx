@@ -12,7 +12,7 @@ import {
 export default class AppHeader extends Component {
     render() {
         return (
-            <header>
+            <header className='appHeader'>
                 <div className='content'>
                     <div className='header'>
                         <Link to='/'><h1>JustTrip</h1></Link>

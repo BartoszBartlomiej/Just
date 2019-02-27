@@ -1,28 +1,26 @@
 .appNavigation {
 
-
   nav {
     width: 11.5em;
     height: 38em;
-    background-color: #cccccc;
+    //background-color: #cccccc;
+
+    background-color: rgba(200, 200, 200, 0.4);
 
     li {
-
       padding: 1em 0 0 0.3em;
 
       a {
         text-decoration: none;
-        color: #000000;
+        //color: #000000;
+        color: white;
         font-size: 1.2em;
+        font-family: 'Ubuntu', sans-serif;
 
         &:hover {
           color: green;
         }
       }
-
     }
-
   }
-
-
 }

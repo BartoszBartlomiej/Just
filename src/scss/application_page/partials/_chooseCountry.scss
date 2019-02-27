@@ -1,8 +1,24 @@
 .chooseCountry {
-  width: 10rem;
-  height: 10rem;
-  background-color: red;
+  padding-top: 2rem;
+  width: 23rem;
+  height: 12rem;
+  background-color: rgba(200, 200, 200, 0.5);
 
   .yourChoose {
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    flex-direction: column;
+
+    p {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.5rem;
+
+    }
+
+    input {
+      margin-bottom: .5rem;
+    }
+
   }
 }

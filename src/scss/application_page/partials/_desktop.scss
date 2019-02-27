@@ -1,13 +1,17 @@
 .desktop {
   width: 62rem;
   height: 38rem;
-  border: 1px solid #cccccc;
-  background-image: url("http://educypedia.karadimov.info/library/BlankMap-World.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 100;
+  //border: 1px solid #cccccc;
+  //background-image: url("http://educypedia.karadimov.info/library/BlankMap-World.png");
+  //background-size: cover;
+  //background-repeat: no-repeat;
+  //background-position: center;
 
+  background-color: rgba(200, 200, 200, 0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .desktopSpace {

@@ -1,5 +1,6 @@
-header {
+header.appHeader {
   height: 6em;
+  background-color: rgba(200, 200, 200, 0.3);
 
   .header {
     //width: auto;
@@ -13,7 +14,6 @@ header {
     h1 {
       font-size: 3em;
       font-family: 'Pacifico', cursive;
-      width: 5em;
 
       &:hover {
         color: green;

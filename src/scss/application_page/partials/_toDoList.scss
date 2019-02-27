@@ -1,0 +1,73 @@
+html {
+  background-image: url("https://images.pexels.com/photos/206660/pexels-photo-206660.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  //background-image: url("https://images.pexels.com/photos/158385/lake-mcdonald-landscape-panorama-sunset-158385.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  background-size: cover;
+  //background-image: url("https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  //background-image: url("https://images.pexels.com/photos/724712/pexels-photo-724712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+}
+
+.backpack {
+  width: 20rem;
+  height: 35rem;
+  background-color: rgba(200, 200, 200, 0.5);
+  //background-image: url("");
+  display: flex;
+  justify-content: center;
+  padding: .5rem 0 0 0;
+
+  .stuff {
+    display: flex;
+    justify-content: space-between;
+
+    .toPack {
+      color: #000000;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    .packed {
+      color: green;
+      text-decoration: line-through;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    .stuff__btn {
+      background: none;
+      border: none;
+
+      &:first-child {
+        color: green;
+      }
+
+      &:last-child {
+        color: red;
+      }
+    }
+  }
+
+  .stuffToPack {
+    margin-bottom: 1rem;
+
+    button {
+      height: 2rem;
+      margin-left: .5rem;
+      border: 1px solid green;
+      font-family: 'Ubuntu', sans-serif;
+      background-color: green;
+      color: #ffffff;
+    }
+
+    form {
+      height: 2rem;
+    }
+
+    input {
+      height: 2rem;
+    }
+
+    li {
+      font-family: 'Ubuntu', sans-serif;
+    }
+  }
+}
+

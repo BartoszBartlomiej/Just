@@ -1,15 +1,18 @@
 .viewSpace {
   width: auto;
   height: 38em;
-  border: 1px solid grey;
+  //border: 1px solid grey;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url("http://educypedia.karadimov.info/library/BlankMap-World.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  //background-image: url("http://educypedia.karadimov.info/library/BlankMap-World.png");
+  //background-size: cover;
+  //background-repeat: no-repeat;
+  //background-position: center;
+
+  background-color: rgba(200, 200, 200, 0.3);
+
   a {
     text-decoration: none;
     color: black;
@@ -33,7 +36,7 @@
     }
 
     .newTrip__text {
-      background-color: rgba(200, 200, 200, 0.3);
+      background-color: rgba(200, 200, 200, 0.5);
       width: 25em;
       height: 5em;
       display: flex;
@@ -66,7 +69,7 @@
     }
 
     .yourTrip__text {
-      background-color: rgba(200, 200, 200, 0.3);
+      background-color: rgba(200, 200, 200, 0.5);
       width: 25em;
       height: 5em;
       display: flex;
