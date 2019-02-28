@@ -19,7 +19,6 @@ import {
 export default class NewTrip extends Component {
 
     render() {
-
         return (
             <div>
                 <AppHeader/>

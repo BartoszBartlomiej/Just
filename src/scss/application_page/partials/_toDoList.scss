@@ -7,9 +7,14 @@
   justify-content: center;
   padding: .5rem 0 0 0;
 
+  li {
+    list-style-type: none;
+  }
+
   .stuff {
     display: flex;
     justify-content: space-between;
+
 
     .toPack {
       color: #000000;
@@ -39,7 +44,7 @@
   .stuffToPack {
     margin-bottom: 1rem;
 
-    button {
+    .button {
       height: 2rem;
       margin-left: .5rem;
       border: 1px solid green;

@@ -55,11 +55,13 @@ class App extends Component {
             <div>
                 <HashRouter>
                     <div>
-                        <Route exact path='/' component={LandingPage}/>
-                        <Route path='/about__app' component={LandingPage}/>
-                        <Route path='/about__author' component={LandingPage}/>
-                        <Route path='/app' component={ApplicationPage}/>
-                        <Route path='*' component={NotFound}/>
+                        <Switch>
+                            <Route exact path='/' component={LandingPage}/>
+                            <Route path='/about__app' component={LandingPage}/>
+                            <Route path='/about__author' component={LandingPage}/>
+                            <Route path='/app' component={ApplicationPage}/>
+                            <Route path='*' component={NotFound}/>
+                        </Switch>
                     </div>
                 </HashRouter>
             </div>
