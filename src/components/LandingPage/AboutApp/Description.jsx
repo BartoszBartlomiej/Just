@@ -8,9 +8,9 @@ export default class Description extends Component {
             <div className='aboutApp__description__options__container'>
                 <FontAwesomeIcon className='fontAwesome' icon={this.props.icon}/>
                 <p>{this.props.description}</p>
-                <div className='aboutApp__description__options__container__img'>
-                    TU BĘDZIE SCREEN
-                </div>
+                {/*<div className='aboutApp__description__options__container__img'>*/}
+                    {/*TU BĘDZIE SCREEN*/}
+                {/*</div>*/}
             </div>
         )
     }

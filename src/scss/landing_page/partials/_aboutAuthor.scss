@@ -16,18 +16,19 @@ section.aboutAuthor {
     padding: 2em 0 0 0;
   }
 
-  h3 {
+  h4 {
     padding: 1em 0 0 0;
     font-family: 'Ubuntu', sans-serif;
     font-size: 2em;
+    color: $baseColor;
   }
 
   .aboutAuthor__img {
-    width: 10em;
+    width: 20em;
   }
 
   .aboutAuthor__description {
-    padding-right: 20em;
+    padding-right: 5em;
     width: 80em;
 
 

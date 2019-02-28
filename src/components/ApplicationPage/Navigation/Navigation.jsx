@@ -12,7 +12,7 @@ import {
 export default class Navigation extends Component {
     render() {
         const linkStyle = {
-            color: 'green'
+            color: '#c43235'
         };
 
         return (

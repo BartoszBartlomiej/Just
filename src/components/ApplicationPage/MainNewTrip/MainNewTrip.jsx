@@ -15,9 +15,7 @@ export default class MainNewTrip extends Component {
         const url = 'https://restcountries.eu/rest/v2/all';
         fetch(url).then(resp => resp.json()).then(data => {
             const result = data.filter((singleCountry) => {
-
                 return singleCountry.name === this.state.userCountry;
-
             });
             const countryObj = result[0];
             console.log(countryObj);
@@ -29,12 +27,8 @@ export default class MainNewTrip extends Component {
             this.setState({
                 userCountry: ''
             });
-
-            console.log(this.state.countryInfo.languages[0].name)
-
         });
     };
-
 
     userChooseCountry = (e) => {
         console.log(e.target.value);
@@ -43,12 +37,10 @@ export default class MainNewTrip extends Component {
         })
     };
 
-
     render() {
         if (!this.state.data) {
             return (
                 <div className='mainPage'>
-
                     <form onSubmit={this.countriesInformation}>
                         <input onChange={(e) => this.userChooseCountry(e)} placeholder='KRAJ'
                                value={this.state.userCountry}/>
@@ -57,8 +49,6 @@ export default class MainNewTrip extends Component {
             )
         } else {
             const countryInfo = this.state.countryInfo;
-
-
             return (
                 <div className='mainPage'>
                     <div className='inputChooseCountry'>
@@ -68,22 +58,22 @@ export default class MainNewTrip extends Component {
                         </form>
                     </div>
                     <div className='informationAboutCountry'>
-                        <p>Country: {countryInfo.name}</p>
-                        <p>Capital: {countryInfo.capital}</p>
-                        <p>Languages: {countryInfo.languages[0].name}</p>
+                        <p>Country: <span>{countryInfo.name}</span></p>
+                        <p>Capital: <span>{countryInfo.capital}</span></p>
+                        <p>Languages: <span>{countryInfo.languages[0].name}</span></p>
                         <p>Co-ordinates:</p>
                         <ul>
                             <li>
-                                N: {countryInfo.latlng[0]}
+                                N: <span>{countryInfo.latlng[0]}</span>
                             </li>
                             <li>
-                                E: {countryInfo.latlng[1]}
+                                E: <span>{countryInfo.latlng[1]}</span>
                             </li>
                         </ul>
-                        <p>Region: {countryInfo.region}</p>
-                        <p>Subregion: {countryInfo.subregion}</p>
-                        <p>Currencies: {countryInfo.currencies[0].name}</p>
-                        <p>TimeZone: {countryInfo.timezones[0]}</p>
+                        <p>Region: <span>{countryInfo.region}</span></p>
+                        <p>Subregion: <span>{countryInfo.subregion}</span></p>
+                        <p>Currencies: <span>{countryInfo.currencies[0].name}</span></p>
+                        <p>TimeZone: <span>{countryInfo.timezones[0]}</span></p>
                     </div>
                     <div className='flag'>
                         <img src={countryInfo.flag}/>

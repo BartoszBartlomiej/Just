@@ -1,6 +1,6 @@
 section.aboutApp {
   background-color: #eeeeee;
-  height: 35em;
+  height: 25em;
   //display: flex;
 
   .aboutApp__description {
@@ -40,7 +40,7 @@ section.aboutApp {
 
         width: 5em;
         height: 5em;
-        background-color: green;
+        background-color: $baseColor;
       }
     }
   }

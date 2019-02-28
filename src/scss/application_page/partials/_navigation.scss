@@ -5,7 +5,7 @@
     height: 38em;
     //background-color: #cccccc;
 
-    background-color: rgba(200, 200, 200, 0.4);
+    background-color: rgba(200, 200, 200, 0.3);
 
     .back {
       margin-top: 23rem;
@@ -22,7 +22,7 @@
         font-family: 'Ubuntu', sans-serif;
 
         &:hover {
-          color: green;
+          color: $baseColor;
         }
       }
     }

@@ -32,7 +32,7 @@
     justify-content: center;
 
     &:hover {
-      color: green;
+      color: $baseColor;
     }
 
     .newTrip__text {
@@ -65,7 +65,7 @@
     justify-content: center;
 
     &:hover {
-      color: green;
+      color: $baseColor;
     }
 
     .yourTrip__text {

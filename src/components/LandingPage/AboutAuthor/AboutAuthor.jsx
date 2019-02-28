@@ -7,7 +7,7 @@ export default class AboutAuthor extends Component {
             <section className="aboutAuthor">
                 <div id='about__author'/>
                 <div className='content'>
-                    <h3>O AUTORZE</h3>
+                    <h4>O AUTORZE</h4>
                     <div className='aboutAuthor__container'>
                         <div className='aboutAuthor__description'>
                             <h3>Bartosz Bartłomiej Lewicki</h3>
@@ -22,7 +22,7 @@ export default class AboutAuthor extends Component {
                         </div>
                         <div className='aboutAuthor__img'>
                             <img alt='author' title='bbl'
-                                 src='https://scontent.fktw1-1.fna.fbcdn.net/v/t1.0-9/403527_2943282681178_1640705100_n.jpg?_nc_cat=101&_nc_ht=scontent.fktw1-1.fna&oh=f69c8934bf007896640b83bc5dec1966&oe=5CE803AF'/>
+                                 src='https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/13716062_10207447636124443_4406429907458921452_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=891de90943c82abf8517b6761259cf9f&oe=5D28F822'/>
                         </div>
                     </div>
                 </div>
