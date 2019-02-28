@@ -27,7 +27,7 @@ export default class AddItem extends Component {
         return (
             <div className='stuffToPack'>
                 <form onSubmit={this.handleSubmit}>
-                    <input onChange={this.handleChange} type="text" value={this.state.taskName}/>
+                    <input className='input' onChange={this.handleChange} type="text" value={this.state.taskName}/>
                     <input className='button' type="submit" value='SPAKUJ'/>
                 </form>
             </div>

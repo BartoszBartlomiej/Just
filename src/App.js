@@ -28,7 +28,15 @@ import './App.scss';
 
 import {library} from '@fortawesome/fontawesome-svg-core'
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faGlobeAmericas, faIgloo, faListUl, faPlane, faShare, faUser} from '@fortawesome/free-solid-svg-icons'
+import {
+    faArrowLeft,
+    faGlobeAmericas,
+    faIgloo,
+    faListUl,
+    faPlane,
+    faShare,
+    faUser
+} from '@fortawesome/free-solid-svg-icons'
 import {faCompass} from "@fortawesome/free-solid-svg-icons/faCompass";
 import {faHiking} from "@fortawesome/free-solid-svg-icons/faHiking";
 import {faBook} from "@fortawesome/free-solid-svg-icons/faBook";
@@ -47,6 +55,7 @@ library.add(faListUl);
 library.add(faUser);
 library.add(faCheck);
 library.add(faTimes);
+library.add(faArrowLeft);
 
 
 class App extends Component {

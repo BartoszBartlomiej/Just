@@ -34,6 +34,11 @@ export default class Navigation extends Component {
                                 POKŁADOWY</NavLink>
                         </li>
                     </ul>
+                    <ul className='back'>
+                        <li>
+                            <NavLink exact to='/app/' activeStyle={linkStyle}><FontAwesomeIcon icon='arrow-left'/> POWRÓT</NavLink>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         )

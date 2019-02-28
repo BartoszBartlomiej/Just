@@ -6,6 +6,7 @@ import Desktop from '../Desktop/Desktop';
 import TripPlan from './TripPlan/TripPlan'
 import Backpack from './Backpack/Backpack';
 import Diary from './Diary/Diary';
+import MainNewTrip from './../MainNewTrip/MainNewTrip';
 
 import {
     HashRouter,
@@ -26,7 +27,7 @@ export default class NewTrip extends Component {
                     <Navigation/>
                     <HashRouter>
                         <Desktop>
-                            {/*<ChooseCountry />*/}
+                            <Route exact path='/app/newTrip' component={MainNewTrip}/>
                             <Route exact path='/app/newTrip/tripPlan' component={TripPlan}/>
                             <Route path='/app/newTrip/backpack' component={Backpack}/>
                             <Route path='/app/newTrip/diary' component={Diary}/>
