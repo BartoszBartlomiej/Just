@@ -6,7 +6,7 @@ import Desktop from '../Desktop/Desktop';
 import TripPlan from './TripPlan/TripPlan'
 import Backpack from './Backpack/Backpack';
 import Diary from './Diary/Diary';
-import MainNewTrip from './../MainNewTrip/MainNewTrip';
+import MainNewTrip from './MainNewTrip/MainNewTrip';
 
 import {
     HashRouter,

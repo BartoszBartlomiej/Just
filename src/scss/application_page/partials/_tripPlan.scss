@@ -5,12 +5,27 @@ h3 {
 }
 
 
-textarea {
-  width: 60rem;
-  height: 35rem;
-  background-color: rgba(200, 200, 200, 0.2);
-  border: none;
-  font-family: 'Ubuntu', sans-serif;
-  resize: none;
-  font-size: 1.3rem;
+.tripPlan__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  textarea {
+    width: 60rem;
+    height: 34rem;
+    background-color: rgba(200, 200, 200, 0.2);
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    resize: none;
+    font-size: 1.3rem;
+  }
+
+  .save__country {
+    width: 4rem;
+    border: 1px solid $baseColor;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: $baseColor;
+    color: #ffffff;
+    outline-color: $baseColor;
+  }
 }

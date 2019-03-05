@@ -22,7 +22,7 @@ export default class AboutAuthor extends Component {
                         </div>
                         <div className='aboutAuthor__img'>
                             <img alt='author' title='bbl'
-                                 src='https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/13716062_10207447636124443_4406429907458921452_n.jpg?_nc_cat=109&_nc_ht=scontent-waw1-1.xx&oh=891de90943c82abf8517b6761259cf9f&oe=5D28F822'/>
+                                 src='https://scontent.fktw1-1.fna.fbcdn.net/v/t31.0-8/13708175_10207447624044141_7761435969495735113_o.jpg?_nc_cat=109&_nc_ht=scontent.fktw1-1.fna&oh=8e545d1a4add410a91026174fdb9b7cc&oe=5D2433F9'/>
                         </div>
                     </div>
                 </div>

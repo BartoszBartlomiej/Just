@@ -16,13 +16,14 @@
   a {
     text-decoration: none;
     color: black;
+    outline-color: $baseColor;
+    height: 10rem;
+    margin-bottom: 3em;
   }
 
   .newTrip {
     width: 50em;
     height: 10em;
-    //border: 1px solid black;
-    margin-bottom: 3em;
     background-image: url("https://images.pexels.com/photos/297642/pexels-photo-297642.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
     background-size: cover;
     background-repeat: no-repeat;

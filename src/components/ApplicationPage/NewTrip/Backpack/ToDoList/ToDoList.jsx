@@ -59,7 +59,7 @@ export default class App extends Component {
 
 
         return (
-            <div className="App">
+            <div>
                 <AddItem handleNewItem={this.addNewTask} />
                 <ToDoItems data={this.state.stuffToPack} handleDelete={this.deleteSelected} />
             </div>

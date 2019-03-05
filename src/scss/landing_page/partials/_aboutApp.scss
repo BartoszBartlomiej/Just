@@ -26,6 +26,10 @@ section.aboutApp {
 
       .fontAwesome {
         font-size: 4em;
+
+        &:hover {
+          color: $baseColor;
+        }
       }
 
       p {

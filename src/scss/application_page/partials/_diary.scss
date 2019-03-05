@@ -13,4 +13,23 @@ textarea {
   font-family: 'Ubuntu', sans-serif;
   resize: none;
   font-size: 1.3rem;
+  color: $baseColor;
+  outline-color: $baseColor;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgba(200, 200, 200, 0.1);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $baseColor
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #a72c2f;
+  }
 }

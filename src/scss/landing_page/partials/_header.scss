@@ -25,6 +25,7 @@ header {
           text-decoration: none;
           color: black;
           font-family: 'Ubuntu', sans-serif;
+          outline-color: $baseColor;
 
           &:hover {
             color: $baseColor;

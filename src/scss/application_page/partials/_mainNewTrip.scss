@@ -42,7 +42,6 @@
   .flag {
     margin-top: 1rem;
     width: 8rem;
-    height: 8rem;
   }
 
 
@@ -51,6 +50,17 @@
     height: 3rem;
     width: 30rem;
     font-size: 1.7rem;
+    outline-color: $baseColor;
+  }
+
+  .save__country {
+    margin-top: 0.5rem;
+    //height: 2rem;
+    border: 1px solid $baseColor;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: $baseColor;
+    color: #ffffff;
+    outline-color: $baseColor;
   }
 }
 

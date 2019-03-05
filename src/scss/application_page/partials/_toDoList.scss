@@ -1,11 +1,52 @@
 .backpack {
-  width: 20rem;
+  width: 21rem;
   height: 35rem;
   background-color: rgba(200, 200, 200, 0.5);
   //background-image: url("");
   display: flex;
   justify-content: center;
   padding: .5rem 0 0 0;
+
+  //overflow: auto;
+  //
+  //&::-webkit-scrollbar {
+  //  width: 10px;
+  //  height: 10px;
+  //}
+  //
+  //&::-webkit-scrollbar-track {
+  //  background-color: rgba(200, 200, 200, 0.1);
+  //}
+  //
+  //&::-webkit-scrollbar-thumb {
+  //  background: $baseColor
+  //}
+  //
+  //&::-webkit-scrollbar-thumb:hover {
+  //  background: #e63c3f;
+  //}
+
+  .scroll {
+    padding-right: .5rem;
+    height: 31rem;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: rgba(200, 200, 200, 0.1);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $baseColor
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #e63c3f;
+    }
+  }
 
   li {
     list-style-type: none;
@@ -15,10 +56,10 @@
     display: flex;
     justify-content: space-between;
 
-
     .toPack {
       color: #000000;
       font-family: 'Ubuntu', sans-serif;
+      width: 13rem;
     }
 
     .packed {
@@ -30,6 +71,7 @@
     .stuff__btn {
       background: none;
       border: none;
+      outline-color: $baseColor;
 
       &:first-child {
         color: green;
@@ -46,11 +88,13 @@
 
     .button {
       height: 2rem;
+      width: 5rem;
       margin-left: .5rem;
       border: 1px solid $baseColor;
       font-family: 'Ubuntu', sans-serif;
       background-color: $baseColor;
       color: #ffffff;
+      outline-color: $baseColor;
     }
 
     form {
@@ -60,11 +104,11 @@
     .input {
       width: 12rem;
       font-family: 'Ubuntu', sans-serif;
+      outline-color: $baseColor;
     }
 
     input {
       height: 2rem;
-
     }
 
     li {

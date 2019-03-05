@@ -78,6 +78,7 @@ export default class MainNewTrip extends Component {
                     <div className='flag'>
                         <img src={countryInfo.flag}/>
                     </div>
+                    <button className='save__country'>ZAPISZ</button>
                 </div>
             );
         }
