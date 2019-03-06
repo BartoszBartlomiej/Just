@@ -1,12 +1,29 @@
 import React, {Component} from 'react';
+import ChooseCountry from './ChooseCountry';
+
+function getLocalStorageData(key) {
+    if (localStorage.getItem(key) == null) {
+        return false;
+    } else {
+        return JSON.parse(localStorage.getItem(key));
+    }
+}
+
+function setLocalStorageData(key, array) {
+    localStorage.setItem(key, JSON.stringify(array));
+}
+
+function clearLocalStorageData(key) {
+    localStorage.removeItem(key);
+}
 
 export default class MainNewTrip extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            countryInfo: '',
+            countryInfo: getLocalStorageData('userCountryChoose')?getLocalStorageData('userCountryChoose'):'',
             userCountry: '',
-            data: false,
+            data: getLocalStorageData('userCountryChoose')?true:false,
         }
     }
 
@@ -22,12 +39,12 @@ export default class MainNewTrip extends Component {
 
             this.setState({
                 countryInfo: countryObj,
-                data: true
-            });
-            this.setState({
-                userCountry: ''
+                allCountry: result,
+                data: true,
+                userCountry:''
             });
         });
+        clearLocalStorageData('userCountryChoose');
     };
 
     userChooseCountry = (e) => {
@@ -37,52 +54,87 @@ export default class MainNewTrip extends Component {
         })
     };
 
+    handleSaveClick = () => {
+        setLocalStorageData('userCountryChoose', this.state.countryInfo)
+    };
+
+    // componentDidMount() {
+    //     if (getLocalStorageData('userCountryChoose') !== null) {
+    //         this.setState({
+    //             countryInfo: getLocalStorageData('diary'),
+    //             data: true
+    //         });
+    //     }
+    //     else {
+    //         this.setState({
+    //             countryInfo: '',
+    //             data: false
+    //         })
+    //     }
+    // }
+
     render() {
         if (!this.state.data) {
             return (
                 <div className='mainPage'>
-                    <form onSubmit={this.countriesInformation}>
-                        <input onChange={(e) => this.userChooseCountry(e)} placeholder='KRAJ'
-                               value={this.state.userCountry}/>
-                    </form>
+                    <ChooseCountry
+                        information={this.countriesInformation}
+                        change={(e) => this.userChooseCountry(e)}
+                        userCountry={this.state.userCountry}
+                        place="KRAJ"
+                    />
                 </div>
             )
-        } else {
-            const countryInfo = this.state.countryInfo;
-            return (
-                <div className='mainPage'>
-                    <div className='inputChooseCountry'>
-                        <form onSubmit={this.countriesInformation}>
-                            <input onChange={(e) => this.userChooseCountry(e)} placeholder='KRAJ'
-                                   value={this.state.userCountry}/>
-                        </form>
+
+        } else  {
+            if (this.state.countryInfo === undefined) {
+                return (
+                    <div className='mainPage'>
+                        <ChooseCountry
+                            information={this.countriesInformation}
+                            change={(e) => this.userChooseCountry(e)}
+                            userCountry={this.state.userCountry}
+                            place="NIEPRAWIDŁOWA NAZWA KRAJU"
+                        />
                     </div>
-                    <div className='informationAboutCountry'>
-                        <p>Country: <span>{countryInfo.name}</span></p>
-                        <p>Capital: <span>{countryInfo.capital}</span></p>
-                        <p>Languages: <span>{countryInfo.languages[0].name}</span></p>
-                        <p>Co-ordinates:</p>
-                        <ul>
-                            <li>
-                                N: <span>{countryInfo.latlng[0]}</span>
-                            </li>
-                            <li>
-                                E: <span>{countryInfo.latlng[1]}</span>
-                            </li>
-                        </ul>
-                        <p>Region: <span>{countryInfo.region}</span></p>
-                        <p>Subregion: <span>{countryInfo.subregion}</span></p>
-                        <p>Currencies: <span>{countryInfo.currencies[0].name}</span></p>
-                        <p>TimeZone: <span>{countryInfo.timezones[0]}</span></p>
+                )
+
+            } else {
+                const countryInfo = this.state.countryInfo;
+                return (
+                    <div className='mainPage'>
+                        <ChooseCountry
+                            information={this.countriesInformation}
+                            change={(e) => this.userChooseCountry(e)}
+                            userCountry={this.state.userCountry}
+                            place="KRAJ"
+                        />
+                        <div className='informationAboutCountry'>
+                            <p>Country: <span>{countryInfo.name}</span></p>
+                            <p>Capital: <span>{countryInfo.capital}</span></p>
+                            <p>Languages: <span>{countryInfo.languages[0].name}</span>
+                            </p>
+                            <p>Co-ordinates:</p>
+                            <ul>
+                                <li>
+                                    N: <span>{countryInfo.latlng[0]}</span>
+                                </li>
+                                <li>
+                                    E: <span>{countryInfo.latlng[1]}</span>
+                                </li>
+                            </ul>
+                            <p>Region: <span>{countryInfo.region}</span></p>
+                            <p>Subregion: <span>{countryInfo.subregion}</span></p>
+                            <p>Currencies: <span>{countryInfo.currencies[0].name}</span></p>
+                            <p>TimeZone: <span>{countryInfo.timezones[0]}</span></p>
+                        </div>
+                        <div className='flag'>
+                            <img src={countryInfo.flag}/>
+                        </div>
+                        <button onClick={this.handleSaveClick} className='save__country'>ZAPISZ</button>
                     </div>
-                    <div className='flag'>
-                        <img src={countryInfo.flag}/>
-                    </div>
-                    <button className='save__country'>ZAPISZ</button>
-                </div>
-            );
+                );
+            }
         }
     }
 }
-
-

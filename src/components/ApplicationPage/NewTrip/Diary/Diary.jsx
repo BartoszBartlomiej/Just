@@ -26,9 +26,15 @@ export default class Diary extends Component {
     }
 
     componentDidMount() {
-        this.setState({
-            diaryText: getLocalStorageData('diary')
-        })
+        if (getLocalStorageData('diary') !== false) {
+            this.setState({
+                diaryText: getLocalStorageData('diary')
+            })
+        } else {
+            this.setState({
+                diaryText: '',
+            })
+        }
     }
 
     handleChange = (e) => {

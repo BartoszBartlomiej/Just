@@ -11,6 +11,7 @@ import {
     Switch,
     NavLink,
 } from 'react-router-dom';
+import NotFound from "../NotFound/NotFound";
 
 
 export default class ApplicationPage extends Component {
@@ -20,10 +21,12 @@ export default class ApplicationPage extends Component {
             <div>
                 <HashRouter>
                     <div>
-                        <Route exact path='/app' component={FirstView}/>
-                        <Route path='/app/newTrip' component={NewTrip}/>
-                        <Route path='/app/yourTrip' component={YourTrip}/>
-
+                        <Switch>
+                            <Route exact path='/app' component={FirstView}/>
+                            <Route path='/app/newTrip' component={NewTrip}/>
+                            <Route path='/app/yourTrip' component={YourTrip}/>
+                            <Route path='/*/' component={NotFound}/>
+                        </Switch>
                     </div>
                 </HashRouter>
             </div>

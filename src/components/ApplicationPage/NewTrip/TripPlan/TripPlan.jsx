@@ -25,9 +25,15 @@ export default class TripPlan extends Component {
     }
 
     componentDidMount() {
-        this.setState({
-            planText: getLocalStorageData('trip-plan')
-        })
+        if (getLocalStorageData('trip-plan') !== false) {
+            this.setState({
+                planText: getLocalStorageData('trip-plan')
+            })
+        } else {
+            this.setState({
+                planText: '',
+            })
+        }
     }
 
     handleChange = (e) => {

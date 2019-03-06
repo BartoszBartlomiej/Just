@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import AppHeader from '../AppHeader/AppHeader';
 import Navigation from "../../ApplicationPage/Navigation/Navigation";
-import ChooseCountry from './ChooseCountry/ChooseCountry';
 import Desktop from '../Desktop/Desktop';
 import TripPlan from './TripPlan/TripPlan'
 import Backpack from './Backpack/Backpack';
 import Diary from './Diary/Diary';
 import MainNewTrip from './MainNewTrip/MainNewTrip';
+import NotFound from "../../NotFound/NotFound";
+
 
 import {
     HashRouter,
@@ -28,7 +29,7 @@ export default class NewTrip extends Component {
                     <HashRouter>
                         <Desktop>
                             <Route exact path='/app/newTrip' component={MainNewTrip}/>
-                            <Route exact path='/app/newTrip/tripPlan' component={TripPlan}/>
+                            <Route path='/app/newTrip/tripPlan' component={TripPlan}/>
                             <Route path='/app/newTrip/backpack' component={Backpack}/>
                             <Route path='/app/newTrip/diary' component={Diary}/>
                         </Desktop>
