@@ -1,5 +1,7 @@
 # JustTrip - plan your trip
 
+#Demo
+http://BartoszBartlomiej.io/JustTrip
 
 ## Technologies
 * React
