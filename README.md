@@ -1,6 +1,6 @@
 # JustTrip - plan your trip
 
-##Demo
+## Demo
 https://bartoszbartlomiej.github.io/JustTrip/#/
 
 ## Technologies
