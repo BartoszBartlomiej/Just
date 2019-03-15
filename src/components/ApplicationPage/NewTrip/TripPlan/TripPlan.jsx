@@ -16,6 +16,13 @@ function clearLocalStorageData(key) {
     localStorage.removeItem(key);
 }
 
+let newTripObj = {
+    saveCountry: '',
+    saveBackpack: [],
+    saveDiary: '',
+    saveTripPlan: ''
+};
+
 export default class TripPlan extends Component {
     constructor(props) {
         super(props);
@@ -38,16 +45,19 @@ export default class TripPlan extends Component {
 
     handleChange = (e) => {
         this.setState({
-            planText: e.target.value
+                planText: e.target.value
             },
         );
     };
 
     handleSubmit = (e) => {
         e.preventDefault();
-            setLocalStorageData('trip-plan', this.state.planText)
+        setLocalStorageData('trip-plan', this.state.planText);
+        // newTripObj.saveTripPlan = this.state.planText;
+        // console.log(newTripObj);
 
     };
+
     render() {
         return (
             <div>

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import SaveTrip from './../NewTrip/SaveTrip/SaveTrip';
 
 import {
     HashRouter,
@@ -11,18 +10,28 @@ import {
 } from 'react-router-dom';
 
 
-export default class Navigation extends Component {
+function getLocalStorageData(key) {
+    if (localStorage.getItem(key) == null) {
+        return false;
+    } else {
+        return JSON.parse(localStorage.getItem(key));
+    }
+}
+
+export default class YourTripNavi extends Component {
     render() {
         const linkStyle = {
             color: '#c43235'
         };
+
+        const savedTrip = getLocalStorageData('newTripObj');
 
         return (
             <div className='appNavigation'>
                 <nav>
                     <ul>
                         <li>
-                            <NavLink exact to='/app/newTrip' activeStyle={linkStyle}><FontAwesomeIcon icon='globe-americas'/> STRONA GŁÓWNA</NavLink>
+                            YOUR TRIPS:
                         </li>
                         <li>
                             <NavLink to='/app/newTrip/tripPlan' activeStyle={linkStyle}><FontAwesomeIcon icon='list-ul'/> PLAN
@@ -37,9 +46,6 @@ export default class Navigation extends Component {
                         </li>
                     </ul>
                     <ul className='back'>
-                        <li>
-                            <SaveTrip/>
-                        </li>
                         <li>
                             <NavLink exact to='/app/' activeStyle={linkStyle}><FontAwesomeIcon icon='arrow-left'/> POWRÓT</NavLink>
                         </li>

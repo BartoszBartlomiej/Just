@@ -17,13 +17,22 @@ function clearLocalStorageData(key) {
     localStorage.removeItem(key);
 }
 
+let newTripObj = {
+    saveCountry: '',
+    saveBackpack: [],
+    saveDiary: '',
+    saveTripPlan: ''
+};
+
+
 export default class MainNewTrip extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            countryInfo: getLocalStorageData('userCountryChoose')?getLocalStorageData('userCountryChoose'):'',
+            countryInfo: getLocalStorageData('userCountryChoose') ? getLocalStorageData('userCountryChoose') : '',
             userCountry: '',
-            data: getLocalStorageData('userCountryChoose')?true:false,
+            data: !!getLocalStorageData('userCountryChoose'),
+            // getLocalStorageData('userCountryChoose') ? true : false,
         }
     }
 
@@ -55,23 +64,11 @@ export default class MainNewTrip extends Component {
     };
 
     handleSaveClick = () => {
-        setLocalStorageData('userCountryChoose', this.state.countryInfo)
+        setLocalStorageData('userCountryChoose', this.state.countryInfo);
+        // newTripObj.saveCountry = this.state.countryInfo.name;
+        // console.log(newTripObj);
     };
 
-    // componentDidMount() {
-    //     if (getLocalStorageData('userCountryChoose') !== null) {
-    //         this.setState({
-    //             countryInfo: getLocalStorageData('diary'),
-    //             data: true
-    //         });
-    //     }
-    //     else {
-    //         this.setState({
-    //             countryInfo: '',
-    //             data: false
-    //         })
-    //     }
-    // }
 
     render() {
         if (!this.state.data) {

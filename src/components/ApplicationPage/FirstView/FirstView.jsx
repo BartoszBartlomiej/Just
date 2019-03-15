@@ -20,7 +20,7 @@ export default class FirstView extends Component {
                         <Link to='/app/newTrip'>
                             <div className='newTrip'>
                                 <div className='newTrip__text'>
-                                    <p>ZAPLANUJ NOWĄ PODRÓŻ</p>
+                                    <p>NOWA PODRÓŻ</p>
                                 </div>
                             </div>
                         </Link>

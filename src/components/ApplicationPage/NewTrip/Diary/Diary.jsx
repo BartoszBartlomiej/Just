@@ -17,6 +17,14 @@ function clearLocalStorageData(key) {
 }
 
 
+let newTripObj = {
+    saveCountry: '',
+    saveBackpack: [],
+    saveDiary: '',
+    saveTripPlan: ''
+};
+
+
 export default class Diary extends Component {
     constructor(props) {
         super(props);
@@ -46,9 +54,12 @@ export default class Diary extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        setLocalStorageData('diary', this.state.diaryText)
+        setLocalStorageData('diary', this.state.diaryText);
+        // newTripObj.saveDiary =  this.state.diaryText;
+        // console.log(newTripObj);
 
     };
+
     render() {
         return (
             <div>
