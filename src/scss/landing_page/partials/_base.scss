@@ -1,7 +1,15 @@
 .content {
   box-sizing: border-box;
   margin: 0 auto;
-  width: 1024px;
+  @include mobile {
+    width: 580px;
+  }
+  @include tablet {
+    width: 780px;
+  }
+  @include desktop {
+    width: 1024px;
+  }
 }
 
 html {

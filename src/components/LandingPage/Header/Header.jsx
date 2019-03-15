@@ -16,16 +16,16 @@ export default class Header extends Component {
                     <nav>
                         <h1>JustTrip</h1>
                         <ul>
-                            <li>
+                            <li className='nav__links'>
                                 <a href='/#about__app'>O APLIKACJI</a>
                             </li>
-                            <li>
+                            <li className='nav__links'>
                                 <a href='/#about__author'>O AUTORZE</a>
                             </li>
                             {/*<li>*/}
                                 {/*<a href='#contact'>KONTAKT</a>*/}
                             {/*</li>*/}
-                            <li>
+                            <li className='nav__links'>
                                 <Link to='/app'>APLIKACJA</Link>
                             </li>
                         </ul>

@@ -1,46 +1,93 @@
-section.aboutAuthor {
-  height: 30em;
-  background-color: #ffffff;
-  display: flex;
-  //align-stuffToPack: center;
-
-  //.content {
-  //  display: flex;
-  //  justify-content: space-between;
-  //  //align-stuffToPack: center;
-  //}
-
-  .aboutAuthor__container {
+@include mobile {
+  section.aboutAuthor {
+    height: 30em;
+    background-color: #ffffff;
     display: flex;
-    justify-content: space-between;
-    padding: 2em 0 0 0;
-  }
 
-  h4 {
-    padding: 1em 0 0 0;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 2em;
-    color: $baseColor;
-  }
-
-  .aboutAuthor__img {
-    width: 50em;
-  }
-
-  .aboutAuthor__description {
-    padding-right: 5em;
-    width: 80em;
-
-
-    h3 {
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 2em;
-      margin-bottom: 1em;
+    .aboutAuthor__container {
+      display: flex;
+      justify-content: space-between;
+      padding: 2em 0 0 0;
     }
 
-    p {
+    h4 {
+      margin-left: 1rem;
+      padding: 1em 0 0 0;
       font-family: 'Ubuntu', sans-serif;
-      font-size: 1.2em;
+      font-size: 2em;
+      color: $baseColor;
+    }
+
+    .aboutAuthor__img {
+      width: 50em;
+    }
+
+    .aboutAuthor__description {
+      padding-right: 5em;
+      width: 80em;
+
+
+      h3 {
+        margin-left: 1rem;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2em;
+        margin-bottom: 1em;
+      }
+
+      p {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+
+@include desktop {
+  section.aboutAuthor {
+    height: 30em;
+    background-color: #ffffff;
+    display: flex;
+    //align-stuffToPack: center;
+
+    //.content {
+    //  display: flex;
+    //  justify-content: space-between;
+    //  //align-stuffToPack: center;
+    //}
+
+    .aboutAuthor__container {
+      display: flex;
+      justify-content: space-between;
+      padding: 2em 0 0 0;
+    }
+
+    h4 {
+      padding: 1em 0 0 0;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 2em;
+      color: $baseColor;
+    }
+
+    .aboutAuthor__img {
+      width: 50em;
+    }
+
+    .aboutAuthor__description {
+      padding-right: 5em;
+      width: 80em;
+
+
+      h3 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2em;
+        margin-bottom: 1em;
+      }
+
+      p {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.2em;
+      }
     }
   }
 }

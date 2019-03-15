@@ -1,48 +1,104 @@
-section.aboutApp {
-  background-color: #eeeeee;
-  height: 25em;
-  //display: flex;
+@include mobile {
+  section.aboutApp {
+    background-color: #eeeeee;
+    height: 70rem;
 
-  .aboutApp__description {
-    padding: 2em 0 0 0;
+    .aboutApp__description {
+      width: 30rem;
+        padding: 2em 0 0 0;
 
-    h3 {
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 2em;
+        h3 {
+          margin-left: 1rem;
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 2em;
+        }
+
+        .aboutApp__description__options {
+          width: 30rem;
+          margin: 4em 0 0 0;
+          display: flex;
+          justify-content: space-between;
+          text-align: center;
+          flex-direction: column;
+
+          .aboutApp__description__options__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20em;
+          }
+
+          .fontAwesome {
+            font-size: 4em;
+          }
+
+          p {
+            font-family: 'Ubuntu', sans-serif;
+            margin: 1em 1em 0 1em;
+            font-size: 1em;
+            text-align: justify;
+            height: 10em;
+          }
+
+          .aboutApp__description__options__container__img {
+
+            width: 5em;
+            height: 5em;
+            background-color: $baseColor;
+          }
+        }
+      }
     }
+  }
 
-    .aboutApp__description__options {
-      margin: 4em 0 0 0;
-      display: flex;
-      justify-content: space-between;
-      text-align: center;
 
-      .aboutApp__description__options__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 20em;
-      }
 
-      .fontAwesome {
-        font-size: 4em;
-      }
+@include desktop {
+  section.aboutApp {
+    background-color: #eeeeee;
+    height: 25em;
+    //display: flex;
 
-      p {
+    .aboutApp__description {
+      padding: 2em 0 0 0;
+
+      h3 {
         font-family: 'Ubuntu', sans-serif;
-        margin: 1em 1em 0 1em;
-        font-size: 1em;
-        text-align: justify;
-        height: 10em;
+        font-size: 2em;
       }
 
-      .aboutApp__description__options__container__img {
+      .aboutApp__description__options {
+        margin: 4em 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
 
-        width: 5em;
-        height: 5em;
-        background-color: $baseColor;
+        .aboutApp__description__options__container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 20em;
+        }
+
+        .fontAwesome {
+          font-size: 4em;
+        }
+
+        p {
+          font-family: 'Ubuntu', sans-serif;
+          margin: 1em 1em 0 1em;
+          font-size: 1em;
+          text-align: justify;
+          height: 10em;
+        }
+
+        .aboutApp__description__options__container__img {
+
+          width: 5em;
+          height: 5em;
+          background-color: $baseColor;
+        }
       }
     }
   }
 }
-

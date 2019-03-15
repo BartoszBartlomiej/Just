@@ -34,16 +34,15 @@ export default class YourTripNavi extends Component {
                             YOUR TRIPS:
                         </li>
                         <li>
-                            <NavLink to='/app/newTrip/tripPlan' activeStyle={linkStyle}><FontAwesomeIcon icon='list-ul'/> PLAN
-                                PODRÓŻY</NavLink>
+                            <NavLink to='/app/yourTrip/trip1' activeStyle={linkStyle}><FontAwesomeIcon icon='globe-americas'/> {savedTrip.saveCountry.name}</NavLink>
                         </li>
-                        <li>
-                            <NavLink to='/app/newTrip/backpack' activeStyle={linkStyle}><FontAwesomeIcon icon='hiking'/> PLECAK</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='/app/newTrip/diary' activeStyle={linkStyle}><FontAwesomeIcon icon='book'/> DZIENNIK
-                                POKŁADOWY</NavLink>
-                        </li>
+                        {/*<li>*/}
+                            {/*<NavLink to='/app/newTrip/backpack' activeStyle={linkStyle}><FontAwesomeIcon icon='hiking'/> PLECAK</NavLink>*/}
+                        {/*</li>*/}
+                        {/*<li>*/}
+                            {/*<NavLink to='/app/newTrip/diary' activeStyle={linkStyle}><FontAwesomeIcon icon='book'/> DZIENNIK*/}
+                                {/*POKŁADOWY</NavLink>*/}
+                        {/*</li>*/}
                     </ul>
                     <ul className='back'>
                         <li>

@@ -20,7 +20,7 @@ export default class YourTrip extends Component {
             <div>
                 <AppHeader/>
                 <div className="desktopSpace content">
-                    <Navigation/>
+                    <YourTripNavi/>
                     <HashRouter>
                         <Desktop>
                             <Route/>
