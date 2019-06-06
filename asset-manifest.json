@@ -1,13 +1,13 @@
 {
   "main.css": "/JustTrip/static/css/main.4b1ba5ac.chunk.css",
-  "main.js": "/JustTrip/static/js/main.ce0e5c53.chunk.js",
-  "main.js.map": "/JustTrip/static/js/main.ce0e5c53.chunk.js.map",
+  "main.js": "/JustTrip/static/js/main.ec35d9b5.chunk.js",
+  "main.js.map": "/JustTrip/static/js/main.ec35d9b5.chunk.js.map",
   "runtime~main.js": "/JustTrip/static/js/runtime~main.3b4e1377.js",
   "runtime~main.js.map": "/JustTrip/static/js/runtime~main.3b4e1377.js.map",
   "static/js/2.5e49819d.chunk.js": "/JustTrip/static/js/2.5e49819d.chunk.js",
   "static/js/2.5e49819d.chunk.js.map": "/JustTrip/static/js/2.5e49819d.chunk.js.map",
   "index.html": "/JustTrip/index.html",
-  "precache-manifest.47f040530d30cb1c0f6e383fe84c566b.js": "/JustTrip/precache-manifest.47f040530d30cb1c0f6e383fe84c566b.js",
+  "precache-manifest.bb2cd500985637bd365392331a36f615.js": "/JustTrip/precache-manifest.bb2cd500985637bd365392331a36f615.js",
   "service-worker.js": "/JustTrip/service-worker.js",
   "static/css/main.4b1ba5ac.chunk.css.map": "/JustTrip/static/css/main.4b1ba5ac.chunk.css.map"
 }
