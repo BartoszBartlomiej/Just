@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/JustTrip/static/js/runtime~main.3b4e1377.js"
   },
   {
-    "revision": "59b3e0b354cae4e03a2d",
-    "url": "/JustTrip/static/js/main.59b3e0b3.chunk.js"
+    "revision": "04628f860a1b3d4ae8f4",
+    "url": "/JustTrip/static/js/main.04628f86.chunk.js"
   },
   {
     "revision": "5e49819d814d566ad81a",
     "url": "/JustTrip/static/js/2.5e49819d.chunk.js"
   },
   {
-    "revision": "59b3e0b354cae4e03a2d",
+    "revision": "04628f860a1b3d4ae8f4",
     "url": "/JustTrip/static/css/main.4b1ba5ac.chunk.css"
   },
   {
-    "revision": "bbbe23e05253d0436d51013ce491f346",
+    "revision": "2d13adfa6776b107a958dcb760c9d187",
     "url": "/JustTrip/index.html"
   }
 ];
