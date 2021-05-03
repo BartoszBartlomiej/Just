@@ -18,11 +18,11 @@ export default class AboutAuthor extends Component {
                                 planach Wietnam. Ta pasja popchnęła mnie do stworzenia JustTrip, miejsca w którym każdy
                                 będzie mógł zaplanować swoją podróż, stworzyć z niej pamiątkę oraz dzielić się swoimi
                                 przeżyciami i doświadczeniami z innymi entuziastami podróży, nie ważne czy dalekich czy
-                                bliskich. Każda podróż kształci! </p>
+                                bliskich. Każda podróż kształci!</p>
                         </div>
                         <div className='aboutAuthor__img'>
                             <img alt='author' title='bbl'
-                                 src='https://scontent.fktw1-1.fna.fbcdn.net/v/t31.0-8/13708175_10207447624044141_7761435969495735113_o.jpg?_nc_cat=109&_nc_ht=scontent.fktw1-1.fna&oh=8e545d1a4add410a91026174fdb9b7cc&oe=5D2433F9'/>
+                                 src='https://scontent-waw1-1.xx.fbcdn.net/v/t31.18172-8/13708175_10207447624044141_7761435969495735113_o.jpg?_nc_cat=109&ccb=1-3&_nc_sid=730e14&_nc_ohc=xDSncU9jpE4AX9A2B1n&_nc_ht=scontent-waw1-1.xx&oh=b2e2946838322a58427d1281a99eec37&oe=60B56E41'/>
                         </div>
                     </div>
                 </div>
